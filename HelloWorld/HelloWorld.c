@@ -1,6 +1,4 @@
 #include "toolbox.h"
-
-
 int main()
 {
     REG_DISPCNT = DCNT_MODE3 | DCNT_BG2;
@@ -14,13 +12,11 @@ int main()
     {
         for (j = 0; j < 160; j++)
         {
-            m3_plot(i,j,CLR_RED);
+            m3_plot(i, j, CLR_RED);
         }
     }
-
     while (1)
         ;
 
     return 0;
 }
-

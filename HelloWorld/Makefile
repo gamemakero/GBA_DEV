@@ -18,7 +18,7 @@ LD 		:= $(PREFIX)gcc
 OBJCOPY	:= $(PREFIX)objcopy
 
 ARCH    := -mthumb-interwork -mthumb
-CFLAGS	:= $(ARCH) -fno-strict-aliasing 
+CFLAGS	:= $(ARCH) -fno-strict-aliasing -O2
 LFLAGS	:= $(ARCH) -specs=gba.specs
 ELFLAGS	:= -v -O binary
 
